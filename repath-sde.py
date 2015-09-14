@@ -31,7 +31,7 @@ try:
 						if lyr.supports("SERVICEPROPERTIES"):  
 							servProp=lyr.serviceProperties  
 							#Replace old dataset name with new dataset name and replace  
-							if (lyr.serviceProperties["ServiceType"]=="SDE") and (lyr.serviceProperties["Service"]== "5153"):  
+							if (lyr.serviceProperties["ServiceType"]=="SDE") and (lyr.serviceProperties["Service"]== "PortName"):  
 								dataSet=lyr.dataSource  								 
 								sdeFile="Database Connections\\"+fileName  
 								lyr.replaceDataSource(sdeFile,"SDE_Workspace",lyr.name,"")  		
